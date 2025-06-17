@@ -23,10 +23,40 @@
     </header>
 
     <main>
-        <form >
-            <label for="Weight"> Please write your Weight</label>
-            <input type="number" name="Weight" id="Weight">
-        </form>
+        <section>
+            <form id="weight">
+                <label for="weight"> Please write your Weight</label>
+                <input type="number" name="weight" id="weight" placeholder="Enter your weight (kg)" required>
+                
+                <label for="height"> Please write your Height</label>
+                <input type="number" name="height" id="height" placeholder="Enter your height (cm)" required>
+                <button onclick="calculateBMI()">Calculate</button>
+            </form>
+        </section>
+        
+        <section>
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>22.86</td>
+                    <td>standard</td>
+                </tr>
+                <tr>
+                    <td>27.86</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>31.86</td>
+                    <td>Obesity</td>
+                </tr>
+            </table>
+        </section>
+        
+        
+        <p id="result"></p>
     </main>
 
     <footer></footer>

@@ -1,12 +1,22 @@
-let weight
-let height
-let BMI
+function calculateBMI(){
+    const weightInput = document.getElementById("weight").value;
+    const heightInput = document.getElementById("height").value;
 
-weight=prompt(message = "please, write your weight")
-height=prompt(message = "please, write your height")
+    const weight = parseFloat(weightInput);
+    const height = parseFloat(heightInput);
 
-BMI = weight / (height * height)
+    debugger
 
-alert("Your BMI is " + BMI)
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0){
+        document.getElementById(result).innerText = "Please enter a number";
+        return;
+    }
+
+    const BMI = weight/ (height**2);
+
+    document.getElementById("result").innerText = "Your BMI is: " + BMI
+
+}
+
 
 
