@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained..">
+    <meta name="keywords" content=".">
+    <meta name="sitedomain" content="https://github.com/ASADDS2/SPA_IMC">
+    <meta name="author" content="Sebastian Arnache Cantillo">
+    <meta name="designer" content="Sebastian Arnache Cantillo">
+    <meta name="organization" content="ASADDS2">
+    <meta name="copyright" content="Todos los derechos reservados © 2025 ASADDS2">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <link rel="stylesheet" href="./src/CSS/styles.css">
+    <link rel="shortcut icon" href="./src/icons/IMCicon.webp" type="image/x-icon">
+    <title>SPA_IMC</title>
+</head>
+<body>
+    <header>
+        <h1>IMC</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="weight">
+                <label for="weight"> Please write your Weight</label>
+                <input type="number" name="weight" id="weight" placeholder="Enter your weight (kg)" required>
+                
+                <label for="height"> Please write your Height</label>
+                <input type="number" name="height" id="height" placeholder="Enter your height (cm)" required>
+                <button onclick="calculateBMI()">Calculate</button>
+            </form>
+        </section>
+        
+        <section>
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>22.86</td>
+                    <td>standard</td>
+                </tr>
+                <tr>
+                    <td>27.86</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>31.86</td>
+                    <td>Obesity</td>
+                </tr>
+            </table>
+        </section>
+        
+        
+        <p id="result"></p>
+    </main>
+
+    <footer></footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
